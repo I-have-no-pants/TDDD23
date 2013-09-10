@@ -2,6 +2,7 @@
 
     var ScrollSpeed:float = 25;
     var ScrollEdge:float = 0.01;
+    var MobileSpeed:float = 0.1;
      
     private var HorizontalScroll:int = 1;
     private var VerticalScroll:int = 1;
@@ -16,8 +17,6 @@
      
     private var InitPos:Vector3;
     private var InitRotation:Vector3;
-     
-     
      
     function Start()
     {
@@ -59,6 +58,17 @@
                 transform.Translate(Vector3.forward * Time.deltaTime * -ScrollSpeed, Space.World);
             }
         }
+        
+        if (Input.touchCount > 0 && 
+		  Input.GetTouch(0).phase == TouchPhase.Moved) {
+		
+			// Get movement of the finger since last frame
+			var touchDeltaPosition:Vector2 = Input.GetTouch(0).deltaPosition;
+			
+			// Move object across XY plane
+			transform.Translate (-touchDeltaPosition.x * MobileSpeed, 
+						-touchDeltaPosition.y * MobileSpeed, 0);
+			}
        
     //ZOOM IN/OUT
        
