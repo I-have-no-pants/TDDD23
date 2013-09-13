@@ -36,6 +36,7 @@ public class MineBotAI : AIPath {
 	public new void Start () {
 		
 		//Prioritize the walking animation
+		if (anim != null) {
 		anim["forward"].layer = 10;
 		
 		//Play all animations
@@ -46,6 +47,7 @@ public class MineBotAI : AIPath {
 		anim["awake"].wrapMode = WrapMode.Clamp;
 		anim["awake"].speed = 0;
 		anim["awake"].normalizedTime = 1F;
+		}
 		
 		//Call Start in base script (AIPath)
 		base.Start ();
@@ -114,16 +116,20 @@ public class MineBotAI : AIPath {
 		
 		if (velocity.sqrMagnitude <= sleepVelocity*sleepVelocity) {
 			//Fade out walking animation
+			if (anim != null)
 			anim.Blend ("forward",0,0.2F);
 		} else {
+			if (anim != null) {
 			//Fade in walking animation
 			anim.Blend ("forward",1,0.2F);
 			
 			//Modify animation speed to match velocity
 			AnimationState state = anim["forward"];
 			
+			
 			float speed = relVelocity.z;
 			state.speed = speed*animationSpeed;
+				}
 		}
 	}
 }
