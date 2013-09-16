@@ -47,6 +47,7 @@
      <Compile Include="Assets\AddTurret.cs" />
      <Compile Include="Assets\FactoryScript.cs" />
      <Compile Include="Assets\RTSClick.cs" />
+     <Compile Include="Assets\RotateAround.cs" />
      <Compile Include="Assets\ShootBunny.cs" />
      <Compile Include="Assets\bouncer.cs" />
      <Compile Include="Assets\bulletScript.cs" />

@@ -10,6 +10,9 @@ public class RTSClick : MonoBehaviour {
 	
 	bool hasBunny= false;
 	
+	public GameObject turret;
+	
+	
 	
 	
 	// Update is called once per frame
@@ -26,13 +29,12 @@ public class RTSClick : MonoBehaviour {
 				
 				if (hit.collider.name == "BunnySpawner") {
 					hasBunny = !hasBunny;	
-				} else if (hasBunny) {
-					var shot = Instantiate(GameObject.Find("Capsule"),hit.point+Vector3.up*10, Quaternion.identity);
-					//shot.rigidbody.AddForce(transform.forward * 1000);
+				
 					
 				} else  if (hit.collider.tag == "Bunny") {
 					
 					hit.collider.rigidbody.AddForce(Vector3.up * 100);
+				
 					
 				} else  {
 					GameObject.Find("Bunny").transform.position = hit.point;	

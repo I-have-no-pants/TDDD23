@@ -17,7 +17,7 @@ public class bouncer : MonoBehaviour {
 	
 	
 	void OnTriggerEnter (Collider other) {
-		other.SendMessage("Boom");
+		//other.SendMessage("Boom");
 		if (other.rigidbody != null) {
 			
 			//other.renderer.material.color = Color.red;
