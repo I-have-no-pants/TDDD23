@@ -45,12 +45,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AddTurret.cs" />
-     <Compile Include="Assets\Attack_test\Callback.cs" />
      <Compile Include="Assets\Attack_test\Health.cs" />
-     <Compile Include="Assets\Attack_test\Messenger.cs" />
      <Compile Include="Assets\Attack_test\Movement.cs" />
      <Compile Include="Assets\Attack_test\Shoot.cs" />
      <Compile Include="Assets\Attack_test\Sight.cs" />
+     <Compile Include="Assets\Attack_test\Spawner.cs" />
      <Compile Include="Assets\FactoryScript.cs" />
      <Compile Include="Assets\RTSClick.cs" />
      <Compile Include="Assets\RotateAround.cs" />

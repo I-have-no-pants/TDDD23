@@ -6,6 +6,7 @@ public class Sight : MonoBehaviour {
 	public GameObject enemy = null;
 	public bool shoot = false;
 	public string enemyTeam;
+	
 	private string team;
 	
 	void Start () {

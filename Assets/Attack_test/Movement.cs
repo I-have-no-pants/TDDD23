@@ -17,8 +17,6 @@ public class Movement : MonoBehaviour {
 		shoot = GetComponent<Sight>().shoot;
 		health = GetComponent<Health>().health;
 		
-		//if (health < 50 && team == "Team2")
-			//transform.Translate(Vector3.right * speed * Time.deltaTime);
 		if (!shoot) {
 			if (team == "Team1")
 				transform.Translate(Vector3.right * speed * Time.deltaTime);

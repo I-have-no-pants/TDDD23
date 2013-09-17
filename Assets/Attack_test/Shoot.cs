@@ -4,6 +4,7 @@ using System.Collections;
 public class Shoot : MonoBehaviour {
 	
 	public float damage = 10f;
+	public float shootDelay = 1f;
 	
 	private GameObject enemy;
 	private bool shoot;
@@ -16,9 +17,9 @@ public class Shoot : MonoBehaviour {
 		enemy = GetComponent<Sight>().enemy;
 		shoot = GetComponent<Sight>().shoot;
 		timer += Time.deltaTime;
-		if (shoot && timer >= 1f) {
+		if (shoot && timer >= shootDelay) {
 			Debug.Log("Pewz " + enemy.name);
-			
+		
 			enemy.GetComponent<Health>().takeDamage(enemy,damage);
 			//Messenger<GameObject,float>.Broadcast("take damage", enemy, damage);
 			timer = 0;
