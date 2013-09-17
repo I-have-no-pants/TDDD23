@@ -17,15 +17,16 @@ public class Sight : MonoBehaviour {
 	}
 	
 	void Update () {
-		if (enemy.GetComponent<Health>().dead) {
+		if (enemy != null &&enemy.GetComponent<Health>() != null && enemy.GetComponent<Health>().dead) {
 			enemy = null;
 			shoot = false;
+			Debug.Log("My target is dead!");
 		}
 	}
 	
 	void OnTriggerStay (Collider other) {
 		if (!other.isTrigger) {
-			if (other.tag == enemyTeam && enemy == null && !other.gameObject.GetComponent<Health>().dead) {
+			if (other.tag == enemyTeam && enemy == null && other.gameObject.GetComponent<Health>() != null && !other.gameObject.GetComponent<Health>().dead) {
 				enemy = other.gameObject;
 				shoot = true;
 			}

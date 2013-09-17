@@ -19,6 +19,7 @@ public class Health : MonoBehaviour {
 			enabled = false;
 			die ();
 		}
+		
 	}
 	
 	void OnGUI () {
@@ -31,13 +32,15 @@ public class Health : MonoBehaviour {
 		}
 	}
 	
-	void takeDamage(GameObject target, float damage) {
+	public void takeDamage(GameObject target, float damage) {
+		
 		if (gameObject == target) {
 			health -= damage;
 		}
 	}
 	
 	void die() {
-		Destroy(gameObject, 0.5f);
+		gameObject.SetActive(false);
+		Destroy(this.gameObject, 0.5f);
 	}
 }

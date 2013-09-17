@@ -91,6 +91,10 @@ GameObject:
   - 54: {fileID: 371733758}
   - 114: {fileID: 371733759}
   - 114: {fileID: 371733760}
+  - 114: {fileID: 371733764}
+  - 114: {fileID: 371733763}
+  - 114: {fileID: 371733762}
+  - 114: {fileID: 371733761}
   m_Layer: 0
   m_Name: Cube1
   m_TagString: Team1
@@ -157,7 +161,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8012761edbcf3ed48b2e13496e32a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!114 &371733756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,12 +174,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 371733750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b085f7e4d747c2408f58dc9980e8fa5, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  shoot: 0
-  enemyTeam: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  health: 100
+  dead: 0
 --- !u!135 &371733757
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -210,8 +223,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab9274f1df6e7484eb3e5461615c6ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  dead: 0
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!114 &371733760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +239,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c8bc9f8e716df4792764d636ff1343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+--- !u!114 &371733761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371733750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0356acd7ad068ec47833c10dd6323da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+--- !u!114 &371733762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371733750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f787257fc1631a4abe9f49d86a469f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 1
+--- !u!114 &371733763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371733750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a012225298e54dc4692a6ffa89f38005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  shoot: 0
+  enemyTeam: Team2
+--- !u!114 &371733764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371733750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 374601321cd62f145a0da22b9da7bf6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  dead: 0
 --- !u!1 &491078582
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +312,10 @@ GameObject:
   - 54: {fileID: 491078585}
   - 114: {fileID: 491078584}
   - 114: {fileID: 491078583}
+  - 114: {fileID: 491078596}
+  - 114: {fileID: 491078595}
+  - 114: {fileID: 491078594}
+  - 114: {fileID: 491078593}
   m_Layer: 0
   m_Name: Cube2
   m_TagString: Team2
@@ -259,7 +334,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c8bc9f8e716df4792764d636ff1343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!114 &491078584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,8 +350,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab9274f1df6e7484eb3e5461615c6ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  dead: 0
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!54 &491078585
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -299,7 +381,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8012761edbcf3ed48b2e13496e32a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!114 &491078587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,9 +397,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b085f7e4d747c2408f58dc9980e8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  shoot: 0
-  enemyTeam: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!135 &491078588
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -374,6 +462,57 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &491078593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491078582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0356acd7ad068ec47833c10dd6323da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+--- !u!114 &491078594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491078582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f787257fc1631a4abe9f49d86a469f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &491078595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491078582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a012225298e54dc4692a6ffa89f38005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  shoot: 0
+  enemyTeam: Team1
+--- !u!114 &491078596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491078582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 374601321cd62f145a0da22b9da7bf6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  dead: 0
 --- !u!1 &685983459
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +659,10 @@ GameObject:
   - 54: {fileID: 1117551206}
   - 114: {fileID: 1117551205}
   - 114: {fileID: 1117551204}
+  - 114: {fileID: 1117551217}
+  - 114: {fileID: 1117551216}
+  - 114: {fileID: 1117551215}
+  - 114: {fileID: 1117551214}
   m_Layer: 0
   m_Name: Cube3
   m_TagString: Team2
@@ -538,7 +681,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c8bc9f8e716df4792764d636ff1343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1117551205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,8 +697,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab9274f1df6e7484eb3e5461615c6ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  dead: 0
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!54 &1117551206
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -578,7 +728,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8012761edbcf3ed48b2e13496e32a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1117551208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,9 +744,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b085f7e4d747c2408f58dc9980e8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  shoot: 0
-  enemyTeam: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!135 &1117551209
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -653,6 +809,57 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1117551214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117551203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0356acd7ad068ec47833c10dd6323da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+--- !u!114 &1117551215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117551203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f787257fc1631a4abe9f49d86a469f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &1117551216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117551203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a012225298e54dc4692a6ffa89f38005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  shoot: 0
+  enemyTeam: Team1
+--- !u!114 &1117551217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117551203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 374601321cd62f145a0da22b9da7bf6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  dead: 0
 --- !u!1 &1160200032
 GameObject:
   m_ObjectHideFlags: 0

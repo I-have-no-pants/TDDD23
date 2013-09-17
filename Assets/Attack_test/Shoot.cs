@@ -17,7 +17,10 @@ public class Shoot : MonoBehaviour {
 		shoot = GetComponent<Sight>().shoot;
 		timer += Time.deltaTime;
 		if (shoot && timer >= 1f) {
-			Messenger<GameObject,float>.Broadcast("take damage", enemy, damage);
+			Debug.Log("Pewz " + enemy.name);
+			
+			enemy.GetComponent<Health>().takeDamage(enemy,damage);
+			//Messenger<GameObject,float>.Broadcast("take damage", enemy, damage);
 			timer = 0;
 		}
 	}
