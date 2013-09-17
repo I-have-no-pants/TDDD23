@@ -9,14 +9,12 @@ public class Health : MonoBehaviour {
 	private string team;
 	
 	void Start () {
-		Messenger<GameObject,float>.AddListener("take damage", takeDamage);
 		team = gameObject.tag;
 	}
 	
 	void Update () {
-		if (health < 0) {
+		if (health <= 0) {
 			dead = true;
-			enabled = false;
 			die ();
 		}
 	}
@@ -31,7 +29,7 @@ public class Health : MonoBehaviour {
 		}
 	}
 	
-	void takeDamage(GameObject target, float damage) {
+	public void takeDamage(GameObject target, float damage) {
 		if (gameObject == target) {
 			health -= damage;
 		}
